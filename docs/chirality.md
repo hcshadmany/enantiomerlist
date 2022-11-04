@@ -8,6 +8,8 @@ For instance your right and left hand are mirror images of each other. Hands are
 
 There is no way to rotate your left hand so it matches perfectly on top of your right hand.
 
-The capital letter, "E" is non chiral. You can rotate it in such a way that it would like up to its mirror image. 
+A chair is non chiral. You can rotate it in such a way that it would like up to its mirror image.
+
+![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrnTTOyrCyR5Hikg2mubH0RJvAY-BmyGac9rU4L-i7y-zsYYILYXMQ3XYW6EHFMrJTI4&usqp=CAU)
 
 

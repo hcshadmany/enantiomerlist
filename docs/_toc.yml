@@ -6,6 +6,5 @@ root: home
 parts:
 - caption: Background
   chapters:
-  - file: markdown
-  - file: notebooks
-  - file: markdown-notebooks
+  - file: chirality
+  - file: enantiomer
