@@ -15,7 +15,9 @@ parts:
   - file: pastapproach
   - file: newapproach
   - file: detectionthreshold
+  - file: themodel
   - file: PredictingOdorDivergenceModel
+  - file: conclusion
 
 # data
 # notebook
