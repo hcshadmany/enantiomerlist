@@ -9,3 +9,14 @@ parts:
   - file: chirality
   - file: enantiomer
   - file: odordivergence
+- caption: Research
+  chapters:
+  - file: problemstatement
+  - file: pastapproach
+  - file: newapproach
+  - file: detectionthreshold
+
+# data
+# notebook
+# results
+# conclusions
