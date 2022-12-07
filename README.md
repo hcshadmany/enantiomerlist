@@ -2,7 +2,7 @@
 
 Predicting odor divergence of enantiomers. 
 
-Tutorial: https://colemanliyah.github.io/enantiomerlist/intro.html
+Tutorial: https://colemanliyah.github.io/enantiomerlist/home.html
 
 # Getting Started
 
