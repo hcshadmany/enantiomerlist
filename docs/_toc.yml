@@ -8,3 +8,4 @@ parts:
   chapters:
   - file: chirality
   - file: enantiomer
+  - file: odordivergence
