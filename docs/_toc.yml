@@ -16,10 +16,7 @@ parts:
   - file: newapproach
   - file: detectionthreshold
   - file: themodel
-  - file: PredictingOdorDivergenceModel
   - file: conclusion
-
-# data
-# notebook
-# results
-# conclusions
+- caption: Notebook
+  chapters:
+  - file: PredictingOdorDivergenceModel
