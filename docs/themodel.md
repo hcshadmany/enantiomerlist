@@ -6,7 +6,7 @@ To avoid overfitting, we applied regularization to the regression model and esti
 
 The results for strictly using Morgan features were as follows:
 
-```{figure} ../modelresults/mordred.png
+```{figure} /modelresults/mordred.png
 Caption for test
 ```
 
