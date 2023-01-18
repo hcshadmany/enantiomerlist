@@ -3,10 +3,11 @@
 
 format: jb-book
 root: home
-defaults:
-  titlesonly: True
+# defaults:
+#   titlesonly: True
 parts:
 - caption: Background
+  numbered: True
   chapters:
   - file: chirality
   - file: enantiomer
