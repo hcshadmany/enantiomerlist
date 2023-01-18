@@ -6,7 +6,7 @@ To avoid overfitting, we applied regularization to the regression model and esti
 
 The results for strictly using Morgan features were as follows:
 
-![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQI0tTqnHZj5WYW-o6CQ4m2gdYy9ss8Ww-Sfc3RhtaCesYOclja4hrdi8bFr_CjpaFjgIa9C-8fKwS4X9V_8k_eevX2_q4ytDd2xwajyznc-8Ii=s512)
+![alt text](../modelresults/mordred.png)
 
 With a correlation metric value of 0.5:
 
