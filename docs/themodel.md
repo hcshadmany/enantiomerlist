@@ -6,7 +6,11 @@ To avoid overfitting, we applied regularization to the regression model and esti
 
 The results for strictly using Morgan features were as follows:
 
-![morgan](../modelresults/mordred.png)
+:::{figure-md} markdown-fig
+<img src="../modelresults/mordred.png">
+
+:::
+<!-- ![morgan](../modelresults/mordred.png) -->
 
 With a correlation metric value of 0.5:
 
