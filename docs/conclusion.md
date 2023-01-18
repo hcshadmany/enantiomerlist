@@ -6,5 +6,4 @@ As documented in the paper, we attempted to use PCA with VCD calculations and 3r
 
 We believe the remaining varience can be explained by a better understanding of the ligand-receptor binding process. 
 
-<!-- ![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTSAoDoJwjDD5ESrgBgzNsobVroSm390YdoRpiAeObZ3NlrstCus9v-IFR1D2Hy_3Z4H8nll-6Z_z2KHuHwTZfB2YQgmsYRaQwD6Ges2DhDKc_EN=s512) -->
 
