@@ -6,19 +6,19 @@ root: home
 defaults:
   titlesonly: True
 parts:
-- caption: Background
-  chapters:
-  - file: chirality
-  - file: enantiomer
-  - file: odordivergence
-- caption: Research
-  chapters:
-  - file: problemstatement
-  - file: pastapproach
-  - file: newapproach
-  - file: detectionthreshold
-  - file: themodel
-  - file: conclusion
-- caption: Notebook
-  chapters:
-  - file: PredictingOdorDivergenceModel
+  - caption: Background
+    chapters:
+    - file: chirality
+    - file: enantiomer
+    - file: odordivergence
+  - caption: Research
+    chapters:
+    - file: problemstatement
+    - file: pastapproach
+    - file: newapproach
+    - file: detectionthreshold
+    - file: themodel
+    - file: conclusion
+  - caption: Notebook
+    chapters:
+    - file: PredictingOdorDivergenceModel
