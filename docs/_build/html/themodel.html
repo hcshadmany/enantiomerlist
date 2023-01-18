@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Predicting Divergence Notebook" href="PredictingOdorDivergenceModel.html" />
+    <link rel="next" title="Conclusion" href="conclusion.html" />
     <link rel="prev" title="Detection Threshold" href="detectionthreshold.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -167,13 +167,20 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="PredictingOdorDivergenceModel.html">
-   Predicting Divergence Notebook
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="conclusion.html">
    Conclusion
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notebook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PredictingOdorDivergenceModel.html">
+   Predicting Divergence Notebook
   </a>
  </li>
 </ul>
@@ -359,6 +366,14 @@ title="Print to PDF"
 <h1>Support Vector Regression<a class="headerlink" href="#support-vector-regression" title="Permalink to this headline">#</a></h1>
 <p>We fed the structural features into a support vector regression model.</p>
 <p>To avoid overfitting, we applied regularization to the regression model and estimated the out-of-sample performance on enantiomeric pairs that the model was not trained on.</p>
+<p>The results for strictly using Morgan features were as follows:</p>
+<p><img alt="alt text" src="https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQI0tTqnHZj5WYW-o6CQ4m2gdYy9ss8Ww-Sfc3RhtaCesYOclja4hrdi8bFr_CjpaFjgIa9C-8fKwS4X9V_8k_eevX2_q4ytDd2xwajyznc-8Ii=s512" /></p>
+<p>With a correlation metric value of 0.5:</p>
+<p><img alt="alt text" src="https://lh3.googleusercontent.com/keep-bbsk/AP6BvTR8Pvzt9MzJYZTXMNzbyUZQah4-6sjUnw1xfVyn0GYwU9Aw-d1avuwwpR4Q-kYkIa4sMcVkKex1RmKsWdjW3VTPE1xIMeEz19flnoiXZQg0OXWD=s512" /></p>
+<p>The results for strictly using Mordred features were as follows:</p>
+<p><img alt="alt text" src="https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQEO11n9SZ83cHq4VbN0hcyNCiS7z08rJ_jF9yUqqDa6uYq5i52fDZn4yjVTWtqPFSneJkeS2iaXk6dWiwdfTf-zCM4WRdLx8injex0uARc1Q80=s512" /></p>
+<p>With a correlation metric value of 0.57:</p>
+<p><img alt="alt text" src="https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQ4cffLkIujS8Zd8_FJyYcCdpHIHmoa2QlVvaFn9xI0qQ3MocnNwxvsWkGvndDCjeXZQTfqH-kjrYA-OhgomPsAYeMx-3CKFFItQZiL70kmZQME=s512" /></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -395,10 +410,10 @@ title="Print to PDF"
             <p class="prev-next-title">Detection Threshold</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="PredictingOdorDivergenceModel.html" title="next page">
+    <a class='right-next' id="next-link" href="conclusion.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Predicting Divergence Notebook</p>
+        <p class="prev-next-title">Conclusion</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
