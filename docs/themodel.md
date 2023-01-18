@@ -10,10 +10,10 @@ The results for strictly using Morgan features were as follows:
 Caption for test
 ```
 
-<!-- :::{figure-md} markdown-fig
+:::{figure-md} markdown-fig
 <img src="/modelresults/mordred.png">
 
-::: -->
+:::
 
 <!-- ![morgan](../modelresults/mordred.png) -->
 
