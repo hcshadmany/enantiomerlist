@@ -10,12 +10,12 @@ The results for strictly using Morgan features were as follows:
 
 With a correlation metric value of 0.5:
 
-![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTR8Pvzt9MzJYZTXMNzbyUZQah4-6sjUnw1xfVyn0GYwU9Aw-d1avuwwpR4Q-kYkIa4sMcVkKex1RmKsWdjW3VTPE1xIMeEz19flnoiXZQg0OXWD=s512)
+<!-- ![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTR8Pvzt9MzJYZTXMNzbyUZQah4-6sjUnw1xfVyn0GYwU9Aw-d1avuwwpR4Q-kYkIa4sMcVkKex1RmKsWdjW3VTPE1xIMeEz19flnoiXZQg0OXWD=s512) -->
 
 The results for strictly using Mordred features were as follows:
 
-![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQEO11n9SZ83cHq4VbN0hcyNCiS7z08rJ_jF9yUqqDa6uYq5i52fDZn4yjVTWtqPFSneJkeS2iaXk6dWiwdfTf-zCM4WRdLx8injex0uARc1Q80=s512)
+<!-- ![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQEO11n9SZ83cHq4VbN0hcyNCiS7z08rJ_jF9yUqqDa6uYq5i52fDZn4yjVTWtqPFSneJkeS2iaXk6dWiwdfTf-zCM4WRdLx8injex0uARc1Q80=s512) -->
 
 With a correlation metric value of 0.57:
 
-![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQ4cffLkIujS8Zd8_FJyYcCdpHIHmoa2QlVvaFn9xI0qQ3MocnNwxvsWkGvndDCjeXZQTfqH-kjrYA-OhgomPsAYeMx-3CKFFItQZiL70kmZQME=s512)
+<!-- ![alt text](https://lh3.googleusercontent.com/keep-bbsk/AP6BvTQ4cffLkIujS8Zd8_FJyYcCdpHIHmoa2QlVvaFn9xI0qQ3MocnNwxvsWkGvndDCjeXZQTfqH-kjrYA-OhgomPsAYeMx-3CKFFItQZiL70kmZQME=s512) -->
