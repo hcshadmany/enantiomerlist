@@ -22,3 +22,7 @@ parts:
   - caption: Notebook
     chapters:
     - file: PredictingOdorDivergenceModel
+    - file: CutDataFrameHalf
+    - file: ThirdPartyEmbeddings
+    - file: MordredAndMorgan
+    - file: PCAAndVCD
