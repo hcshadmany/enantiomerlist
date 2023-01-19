@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PCA and VCD (Could delete since there were no matches)" href="PCAAndVCD.html" />
-    <link rel="prev" title="3rd Party Embeddings" href="ThirdPartyEmbeddings.html" />
+    <link rel="next" title="3rd Party Embeddings" href="ThirdPartyEmbeddings.html" />
+    <link rel="prev" title="Load Data" href="LoadData.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,7 +108,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="home.html">
+                <a class="reference internal" href="intro.html">
                     Predicting Odor Divergence of Enantiomers
                 </a>
             </li>
@@ -121,12 +121,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="chirality.html">
-   1. Chirality
+   Chirality
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="enantiomer.html">
-   2. Enantiomers
+   Enantiomers
   </a>
  </li>
  <li class="toctree-l1">
@@ -162,7 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="themodel.html">
+  <a class="reference internal" href="svr.html">
    Support Vector Regression
   </a>
  </li>
@@ -179,13 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="PredictingOdorDivergenceModel.html">
-   Predicting Divergence Notebook
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ThirdPartyEmbeddings.html">
-   3rd Party Embeddings
+  <a class="reference internal" href="LoadData.html">
+   Load Data
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -194,8 +189,18 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="ThirdPartyEmbeddings.html">
+   3rd Party Embeddings
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="PCAAndVCD.html">
    PCA and VCD (Could delete since there were no matches)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DrGerkinCheck.html">
+   Liyah, stop here.  I can explain what I am doing in the next section another time.
   </a>
  </li>
 </ul>
@@ -778,15 +783,16 @@ Computing Mordred features...
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Model for Morgan dad</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Model for Morgan data</span>
 <span class="n">model_helpers</span><span class="o">.</span><span class="n">create_model</span><span class="p">(</span><span class="n">Xn_morgan</span><span class="p">,</span> <span class="n">y_morgan</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 13/13 [23:04&lt;00:00, 106.52s/it]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 13/13 [23:58&lt;00:00, 110.63s/it]
 </pre></div>
 </div>
+<img alt="_images/MordredAndMorgan_18_1.png" src="_images/MordredAndMorgan_18_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -794,6 +800,9 @@ Computing Mordred features...
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_helpers</span><span class="o">.</span><span class="n">cross_val</span><span class="p">(</span><span class="n">Xn_morgan</span><span class="p">,</span> <span class="n">y_morgan</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/MordredAndMorgan_19_0.png" src="_images/MordredAndMorgan_19_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -804,9 +813,10 @@ Computing Mordred features...
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 13/13 [01:04&lt;00:00,  4.97s/it]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 13/13 [01:02&lt;00:00,  4.77s/it]
 </pre></div>
 </div>
+<img alt="_images/MordredAndMorgan_20_1.png" src="_images/MordredAndMorgan_20_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -848,17 +858,17 @@ Computing Mordred features...
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="ThirdPartyEmbeddings.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="LoadData.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">3rd Party Embeddings</p>
+            <p class="prev-next-title">Load Data</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="PCAAndVCD.html" title="next page">
+    <a class='right-next' id="next-link" href="ThirdPartyEmbeddings.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PCA and VCD (Could delete since there were no matches)</p>
+        <p class="prev-next-title">3rd Party Embeddings</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

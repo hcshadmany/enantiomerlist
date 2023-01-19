@@ -133,20 +133,20 @@ y_morgan = y_morgan[y_morgan < 10]
 Xn_morgan = pd.DataFrame(StandardScaler().fit_transform(x_morgan), index=x_morgan.index, columns=x_morgan.columns)
 
 
-# In[17]:
+# In[25]:
 
 
-# Model for Morgan dad
+# Model for Morgan data
 model_helpers.create_model(Xn_morgan, y_morgan)
 
 
-# In[18]:
+# In[26]:
 
 
 model_helpers.cross_val(Xn_morgan, y_morgan)
 
 
-# In[19]:
+# In[24]:
 
 
 # Model for Mordred data

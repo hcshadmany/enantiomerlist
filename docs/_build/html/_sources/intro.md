@@ -1,11 +1,8 @@
-# Welcome to your Jupyter Book
+# Predicting Odor Divergence of Enantiomers
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Much is known about sound. Much is known about visualization. What about olfaction? 
 
-Check out the content pages bundled with this sample book to see more.
+I worked on this project while a part of the [ICON Lab](https://iconlab.asu.edu/) at Arizona State Unversity as part of my Honor's thesis. 
 
 ```{tableofcontents}
 ```

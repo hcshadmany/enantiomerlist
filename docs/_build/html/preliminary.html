@@ -1,0 +1,1291 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Preliminaries &#8212; Enantiomer Odor Thesis</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Enantiomer Odor Thesis</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Predicting Odor Divergence of Enantiomers
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Background
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chirality.html">
+   Chirality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="enantiomer.html">
+   Enantiomers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="odordivergence.html">
+   Odor Divergence
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Research
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemstatement.html">
+   Predicting Odor Divergence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pastapproach.html">
+   Previous Approach
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="newapproach.html">
+   New Approach - Structural Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="detectionthreshold.html">
+   Detection Threshold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="svr.html">
+   Support Vector Regression
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusion.html">
+   Conclusion
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notebook
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="LoadData.html">
+   Load Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MordredAndMorgan.html">
+   Mordred and Morgan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ThirdPartyEmbeddings.html">
+   3rd Party Embeddings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PCAAndVCD.html">
+   PCA and VCD (Could delete since there were no matches)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DrGerkinCheck.html">
+   Liyah, stop here.  I can explain what I am doing in the next section another time.
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/preliminary.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fpreliminary.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/preliminary.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Preliminaries
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-data-from-the-dream-challenge">
+   Load data from the DREAM challenge
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compute-dream-molecule-features-and-place-into-a-data-frame">
+   Compute DREAM molecule features and place into a data frame
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fit-model-to-dream-data">
+   Fit model to DREAM data
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compute-predictions-and-display">
+   Compute predictions and display
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Preliminaries</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Preliminaries
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-data-from-the-dream-challenge">
+   Load data from the DREAM challenge
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compute-dream-molecule-features-and-place-into-a-data-frame">
+   Compute DREAM molecule features and place into a data frame
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fit-model-to-dream-data">
+   Fit model to DREAM data
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compute-predictions-and-display">
+   Compute predictions and display
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="preliminaries">
+<h1>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">__init__</span> <span class="k">as</span> <span class="nn">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mf">2e3</span><span class="n">ef7d8db2a</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">__init__</span> <span class="k">as</span> <span class="nn">a</span>
+
+<span class="ne">c</span>:\Users\Owner\Documents\liyahswebsite\enantiomerlist\__init__.py in &lt;module&gt;
+<span class="g g-Whitespace">     </span><span class="mi">42</span> <span class="c1">#         sys.path.append(path)</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span> 
+<span class="ne">---&gt; </span><span class="mi">44</span> <span class="kn">from</span> <span class="nn">opc_python.gerkin</span> <span class="kn">import</span> <span class="n">dream</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span> <span class="kn">from</span> <span class="nn">opc_python.utils</span> <span class="kn">import</span> <span class="n">loading</span>
+<span class="g g-Whitespace">     </span><span class="mi">46</span> <span class="c1"># Load descriptors, CIDs, and dilutions for DREAM molecules</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;opc_python&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="load-data-from-the-dream-challenge">
+<h1>Load data from the DREAM challenge<a class="headerlink" href="#load-data-from-the-dream-challenge" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the CIDs from DREAM data set</span>
+<span class="n">dream_CIDs</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">loading</span><span class="o">.</span><span class="n">get_CIDs</span><span class="p">([</span><span class="s1">&#39;training&#39;</span><span class="p">,</span><span class="s1">&#39;leaderboard&#39;</span><span class="p">,</span><span class="s1">&#39;testset&#39;</span><span class="p">])</span> 
+<span class="n">dream_CID_dilutions</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">loading</span><span class="o">.</span><span class="n">get_CID_dilutions</span><span class="p">([</span><span class="s1">&#39;training&#39;</span><span class="p">,</span><span class="s1">&#39;leaderboard&#39;</span><span class="p">,</span><span class="s1">&#39;testset&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="n">d68e2209ed95</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">dream_CIDs</span> <span class="o">=</span> <span class="n">model_helpers</span><span class="o">.</span><span class="n">loading</span><span class="o">.</span><span class="n">get_CIDs</span><span class="p">([</span><span class="s1">&#39;training&#39;</span><span class="p">,</span><span class="s1">&#39;leaderboard&#39;</span><span class="p">,</span><span class="s1">&#39;testset&#39;</span><span class="p">])</span> <span class="c1"># Load the DREAM CIDs</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">dream_CID_dilutions</span> <span class="o">=</span> <span class="n">model_helpers</span><span class="o">.</span><span class="n">loading</span><span class="o">.</span><span class="n">get_CID_dilutions</span><span class="p">([</span><span class="s1">&#39;training&#39;</span><span class="p">,</span><span class="s1">&#39;leaderboard&#39;</span><span class="p">,</span><span class="s1">&#39;testset&#39;</span><span class="p">])</span>
+
+<span class="ne">AttributeError</span>: module &#39;Utils&#39; has no attribute &#39;loading&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the DREAM SMILES strings</span>
+<span class="n">dream_smiles</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">get_dream_smiles</span><span class="p">(</span><span class="n">dream_CIDs</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get isomeric SMILES from DREAM dataset</span>
+<span class="n">isomeric_CIDs</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">find_isomers</span><span class="p">(</span><span class="n">dream_CIDs</span><span class="p">,</span><span class="n">dream_smiles</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="c1"># Show the isomeric pairs from the DREAM challenge</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">HAS_OBABEL</span><span class="p">:</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">show_isomers</span><span class="p">(</span><span class="n">isomeric_CIDs</span><span class="p">,</span><span class="n">dream_CIDs</span><span class="p">,</span><span class="n">dream_smiles</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load DREAM perceptual data</span>
+<span class="n">dream_perceptual_data</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">loading</span><span class="o">.</span><span class="n">load_perceptual_data</span><span class="p">([</span><span class="s1">&#39;training&#39;</span><span class="p">,</span><span class="s1">&#39;leaderboard&#39;</span><span class="p">,</span><span class="s1">&#39;testset&#39;</span><span class="p">])</span>
+<span class="n">Y_dream</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">dream</span><span class="o">.</span><span class="n">make_Y</span><span class="p">(</span><span class="n">dream_perceptual_data</span><span class="p">)</span>
+<span class="c1"># We must also have an imputed version that we can use as input to the algorithm since it will not work with NaNs.  </span>
+<span class="n">Y_dream_imputed</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">dream</span><span class="o">.</span><span class="n">make_Y</span><span class="p">(</span><span class="n">dream_perceptual_data</span><span class="p">,</span> <span class="n">imputer</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">isomeric_index</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># The first isomeric pair, which should be racemic vs L-something</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plot_isomer_ratings</span><span class="p">(</span><span class="n">dream_perceptual_data</span><span class="p">,</span><span class="n">isomeric_CIDs</span><span class="p">[</span><span class="n">isomeric_index</span><span class="p">],(</span><span class="s1">&#39;racemic&#39;</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/preliminary_9_0.png" src="_images/preliminary_9_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shadmany_smiles</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">load_other_smiles</span><span class="p">(</span><span class="n">shadmany</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">shadmany_data</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">&#39;shadmany&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading molecules from the Shadmany enantiomer collection...
+Loaded 32 molecules
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shadmany_data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Molecule Name</th>
+      <th>Pubchem ID #</th>
+      <th>Detection Threshold</th>
+      <th>Detection Units</th>
+      <th>Normalized Detection Threshold</th>
+      <th>Molecule Odour</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>C=C(C)[C@@H]1CC=C(C)C(=O)C1</th>
+      <td>(4S)-(+)-carvone</td>
+      <td>16724</td>
+      <td>1.30E+02</td>
+      <td>ppb</td>
+      <td>1.300000e+02</td>
+      <td>caraway, fresh herbal</td>
+    </tr>
+    <tr>
+      <th>C=C(C)[C@H]1CC=C(C)C(=O)C1</th>
+      <td>(4R)-(-)-carvone</td>
+      <td>439570</td>
+      <td>2.00E+00</td>
+      <td>ppb</td>
+      <td>2.000000e+00</td>
+      <td>sweet spearmint, fresh herbal</td>
+    </tr>
+    <tr>
+      <th>C=C(C)[C@@H]1CCC2=CC(=O)C[C@@H](C)[C@]2(C)C1</th>
+      <td>(4R,4aS,6R)-(+) nootkatone</td>
+      <td>1268142</td>
+      <td>1.50E+01</td>
+      <td>ppm</td>
+      <td>1.500000e+04</td>
+      <td>grapefruit odor</td>
+    </tr>
+    <tr>
+      <th>C=C(C)[C@H]1CCC2=CC(=O)C[C@H](C)[C@@]2(C)C1</th>
+      <td>(4S,4aR,6S)-(-) nootkatone</td>
+      <td>7567181</td>
+      <td>6.60E+04</td>
+      <td>ppm</td>
+      <td>6.600000e+07</td>
+      <td>woody and spicy</td>
+    </tr>
+    <tr>
+      <th>C=C1CCCC(C)(C)[C@@H]1/C=C/C(C)=O</th>
+      <td>(S)-(+)-gamma-ionone</td>
+      <td>11194862</td>
+      <td>7.00E-02</td>
+      <td>ppb water</td>
+      <td>7.000000e-02</td>
+      <td>Linear, very pleasant, floral, green, woody od...</td>
+    </tr>
+    <tr>
+      <th>C=C1CCCC(C)(C)[C@H]1/C=C/C(C)=O</th>
+      <td>(R)-(-)-gamma-ionone</td>
+      <td>11389922</td>
+      <td>1.10E+01</td>
+      <td>ppb water</td>
+      <td>1.100000e+01</td>
+      <td>Weak green, fruity, pineapple-like odor with m...</td>
+    </tr>
+    <tr>
+      <th>C=C[C@@H](O)CCCCC</th>
+      <td>(S)-(+)-1-octen-3-ol</td>
+      <td>2724898</td>
+      <td>1.00E+02</td>
+      <td>ppb in aqueous ethanol</td>
+      <td>1.000000e+02</td>
+      <td>moldy, grassy, artificial; also desribed as he...</td>
+    </tr>
+    <tr>
+      <th>C=C[C@H](O)CCCCC</th>
+      <td>(R)-(-)-1-octen-3-ol</td>
+      <td>6992244</td>
+      <td>1.00E+01</td>
+      <td>ppb in aqueous ethanol</td>
+      <td>1.000000e+01</td>
+      <td>fruity, genuine mushroom-like; also desribed a...</td>
+    </tr>
+    <tr>
+      <th>C=C[C@@]1(C)CC[C@H]([C@@H](C)C=O)O1</th>
+      <td>(2R,2\'R,5\'R)-Lilac aldehyde</td>
+      <td>71587756</td>
+      <td>2.20E+01</td>
+      <td>ng</td>
+      <td>2.200000e-02</td>
+      <td>flowery</td>
+    </tr>
+    <tr>
+      <th>C=C[C@]1(C)CC[C@@H]([C@H](C)C=O)O1</th>
+      <td>(2S,2\'S,5\'S)-Lilac aldehyde</td>
+      <td>441572</td>
+      <td>2.00E-01</td>
+      <td>ng</td>
+      <td>2.000000e-04</td>
+      <td>fresh, flowery</td>
+    </tr>
+    <tr>
+      <th>CC(=O)/C=C/[C@H]1C(C)=CC[C@@H](C)C1(C)C</th>
+      <td>(1S,5R)-(+)-cis-alpha-irone</td>
+      <td>5281521</td>
+      <td>1.00E+05</td>
+      <td>ppb</td>
+      <td>1.000000e+05</td>
+      <td>iris, sweet irone odour, woody ionone, floral,...</td>
+    </tr>
+    <tr>
+      <th>CC(=O)/C=C/[C@@H]1C(C)=CC[C@H](C)C1(C)C</th>
+      <td>(1R,5S)-(-)-cis-alpha-irone</td>
+      <td>11009095</td>
+      <td>1.00E+04</td>
+      <td>ppb</td>
+      <td>1.000000e+04</td>
+      <td>odourless (Galfry, et.al, by GC sniffing); In ...</td>
+    </tr>
+    <tr>
+      <th>CC(C)=C[C@@H]1C[C@H](C)CCO1</th>
+      <td>(4S,2R)-(+)-cis-rose oxide</td>
+      <td>6432154</td>
+      <td>5.00E+01</td>
+      <td>ppb</td>
+      <td>5.000000e+01</td>
+      <td>herbal, green floral, hay green, earthy, heavy...</td>
+    </tr>
+    <tr>
+      <th>CC(C)=C[C@H]1C[C@@H](C)CCO1</th>
+      <td>(4R,2S)-(-)-cis-rose oxide</td>
+      <td>1712087</td>
+      <td>5.00E-01</td>
+      <td>ppb</td>
+      <td>5.000000e-01</td>
+      <td>floral green with clean sharp, light, rose gre...</td>
+    </tr>
+    <tr>
+      <th>CC1=CC[C@H](C(C)(C)S)CC1</th>
+      <td>(R)-(+)-1-p-menthen- 8-thiol</td>
+      <td>44152305</td>
+      <td>2.00E-05</td>
+      <td>ppb</td>
+      <td>2.000000e-05</td>
+      <td>pleasant odor of fresh grapefruit juice</td>
+    </tr>
+    <tr>
+      <th>CC1=CC[C@@H](C(C)(C)S)CC1</th>
+      <td>(S)-(-)-1-p-menthen-8-thiol</td>
+      <td>10877566</td>
+      <td>8.00E-04</td>
+      <td>ppb</td>
+      <td>8.000000e-04</td>
+      <td>weak, nonspecific odor.</td>
+    </tr>
+    <tr>
+      <th>C[C@H]1CCCCCCCCCCCCC(=O)C1</th>
+      <td>(S)-(+)- muscone/(S)-(+)-3-methyl cyclopentade...</td>
+      <td>7160827</td>
+      <td>2.33E+02</td>
+      <td>ppb</td>
+      <td>2.330000e+02</td>
+      <td>poor, weakly musky</td>
+    </tr>
+    <tr>
+      <th>C[C@@H]1CCCCCCCCCCCCC(=O)C1</th>
+      <td>(R)-(-)- muscone/(R)--3-methyl cyclopentadecanone</td>
+      <td>7160826</td>
+      <td>6.10E+01</td>
+      <td>ppb</td>
+      <td>6.100000e+01</td>
+      <td>rich, powerful, musky</td>
+    </tr>
+    <tr>
+      <th>C[C@@H]1COCc2cc3c(cc21)C(C)(C)[C@H](C)C3(C)C</th>
+      <td>(4R,7R)-(+)-galaxolide</td>
+      <td>14177988</td>
+      <td>4.40E-01</td>
+      <td>ppb in air</td>
+      <td>4.400000e-01</td>
+      <td>weak to almost odorless</td>
+    </tr>
+    <tr>
+      <th>C[C@H]1COCc2cc3c(cc21)C(C)(C)[C@@H](C)C3(C)C</th>
+      <td>(4S,7S)-(-)-galaxolide</td>
+      <td>14177991</td>
+      <td>1.00E-03</td>
+      <td>ppb in air</td>
+      <td>1.000000e-03</td>
+      <td>powerful musk odor</td>
+    </tr>
+    <tr>
+      <th>C/C=C/C(=O)[C@H]1C(C)=CCCC1(C)C</th>
+      <td>(R)-(+)-(E)-alpha-damascone</td>
+      <td>1268130</td>
+      <td>1.00E+02</td>
+      <td>ppb</td>
+      <td>1.000000e+02</td>
+      <td>odor character was reminiscent of rose petals,...</td>
+    </tr>
+    <tr>
+      <th>C/C=C/C(=O)[C@@H]1C(C)=CCCC1(C)C</th>
+      <td>(S)-(-)-(E)-alpha-damascone</td>
+      <td>1268132</td>
+      <td>1.50E+00</td>
+      <td>ppb</td>
+      <td>1.500000e+00</td>
+      <td>floral, reminiscent of rose petals and charact...</td>
+    </tr>
+    <tr>
+      <th>CC[C@@H](C)C=O</th>
+      <td>(S)-(+)-2-methylbutanal</td>
+      <td>6971249</td>
+      <td>1.00E+01</td>
+      <td>ppm in air</td>
+      <td>1.000000e+04</td>
+      <td>pungent, fresh, fruity (Boelens, et. al.); Pec...</td>
+    </tr>
+    <tr>
+      <th>CC[C@H](C)C=O</th>
+      <td>(R)-(-)-2-methylbutanal</td>
+      <td>6971248</td>
+      <td>1.00E+02</td>
+      <td>ppm in air</td>
+      <td>1.000000e+05</td>
+      <td>pungent, caprylic (Boelens, et. al.); Peculiar...</td>
+    </tr>
+    <tr>
+      <th>CC/C=C(\C)[C@H](O)CCCCC</th>
+      <td>(R)-(+)-undecavertol</td>
+      <td>40428776</td>
+      <td>3.10E-01</td>
+      <td>ng/L air</td>
+      <td>3.100000e-04</td>
+      <td>similar to the racemate smell floral, green, f...</td>
+    </tr>
+    <tr>
+      <th>CC/C=C(\C)C(O)CCCCC</th>
+      <td>(S)-(-)-undecavertol</td>
+      <td>40565487</td>
+      <td>4.70E+00</td>
+      <td>ng/L air</td>
+      <td>4.700000e-03</td>
+      <td>green fruit with a hint of balsam pinefiru and...</td>
+    </tr>
+    <tr>
+      <th>CC/C=C/C[C@H]1C(=O)CC[C@H]1CC(=O)OC</th>
+      <td>(1R,2S)-(+)-(Z) Methyl epijasmonate</td>
+      <td>6427970</td>
+      <td>3.00E+00</td>
+      <td>ppb</td>
+      <td>3.000000e+00</td>
+      <td>strong, jasmine- like odor</td>
+    </tr>
+    <tr>
+      <th>CC/C=C\C[C@@H]1C(=O)CC[C@@H]1CC(=O)OC</th>
+      <td>(1S,2R)-(-)-(Z) Methyl epijasmonate</td>
+      <td>12566815</td>
+      <td>1.00E+99</td>
+      <td>ppb</td>
+      <td>1.000000e+99</td>
+      <td>odorless</td>
+    </tr>
+    <tr>
+      <th>CCC[C@@H]1CCO[C@H](C)S1</th>
+      <td>(2S,4R)-(+) cis-2-methyl-4-propyl-1,3-oxathiane</td>
+      <td>6931728</td>
+      <td>2.00E+00</td>
+      <td>ppb</td>
+      <td>2.000000e+00</td>
+      <td>\xe2\x80\x9ctypical sulfurous, with a rubbery ...</td>
+    </tr>
+    <tr>
+      <th>CCC[C@H]1CCO[C@@H](C)S1</th>
+      <td>(2R,4S)-(-) cis-2-methyl-4-propyl-1,3-oxathiane</td>
+      <td>6931725</td>
+      <td>4.00E+00</td>
+      <td>ppb</td>
+      <td>4.000000e+00</td>
+      <td>was found weaker (compare thresholds)and \xe2\...</td>
+    </tr>
+    <tr>
+      <th>CCCCC[C@@H]1C(=O)CC[C@@H]1CC(=O)OC</th>
+      <td>(1R,2S)-(+)-Methyl epidihydrojasmonate</td>
+      <td>1738122</td>
+      <td>1.50E+01</td>
+      <td>ppb</td>
+      <td>1.500000e+01</td>
+      <td>intensely floral, jasminelike, bright, cis-jas...</td>
+    </tr>
+    <tr>
+      <th>CCCCC[C@H]1C(=O)CC[C@H]1CC(=O)OC</th>
+      <td>(1S,2R)-(-)-Methyl epidihydrojasmonate</td>
+      <td>1738127</td>
+      <td>1.25E+04</td>
+      <td>ppb</td>
+      <td>1.250000e+04</td>
+      <td>herbal, fatty, tea-like, tobacco, \xc3\x9f-dam...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="compute-dream-molecule-features-and-place-into-a-data-frame">
+<h1>Compute DREAM molecule features and place into a data frame<a class="headerlink" href="#compute-dream-molecule-features-and-place-into-a-data-frame" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute Morgan features for DREAM molecules</span>
+<span class="n">all_smiles</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">dream_smiles</span> <span class="o">+</span> <span class="n">shadmany_smiles</span><span class="p">))</span>
+<span class="n">morgan_sim_all</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">smiles_to_morgan_sim</span><span class="p">(</span><span class="n">all_smiles</span><span class="p">,</span><span class="n">all_smiles</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>507 similarity features for 507 molecules
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute NSPDK features for DREAM molecules</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">HAS_OBABEL</span><span class="p">:</span>
+    <span class="n">nspdk_all</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">smiles_to_nspdk</span><span class="p">(</span><span class="n">all_smiles</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">nspdk_all</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute Dragon or Mordred features for DREAM molecules</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">USE_DRAGON</span><span class="p">:</span>
+    <span class="n">dragon_all</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">smiles_to_dragon</span><span class="p">(</span><span class="n">all_smiles</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">dragon_all</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">smiles_to_mordred</span><span class="p">(</span><span class="n">all_smiles</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Convering SMILES string to Mol format...
+Computing 3D coordinates...
+Computing Mordred features...
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 507/507 [00:17&lt;00:00, 29.34it/s]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There are 507 molecules and 1824 features
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine all DREAM molecular features into one dataframe</span>
+<span class="n">molecular_data_all</span> <span class="o">=</span> <span class="n">dragon_all</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">nspdk_all</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">morgan_sim_all</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">molecular_data_dream</span> <span class="o">=</span> <span class="n">molecular_data_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">dream_smiles</span><span class="p">]</span>
+<span class="c1"># Reindex by the CIDs instead of the SMILES strings</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">molecular_data_dream</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">==</span><span class="n">dream_smiles</span>
+<span class="n">molecular_data_dream</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">dream_CIDs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute the final DREAM molecular features matrix.  </span>
+<span class="n">X_dream</span><span class="p">,</span><span class="n">good1</span><span class="p">,</span><span class="n">good2</span><span class="p">,</span><span class="n">means</span><span class="p">,</span><span class="n">stds</span><span class="p">,</span><span class="n">imputer</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">dream</span><span class="o">.</span><span class="n">make_X</span><span class="p">(</span><span class="n">molecular_data_dream</span><span class="p">,</span><span class="n">dream_CID_dilutions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The X matrix now has shape (952x1697) molecules by non-NaN good molecular descriptors
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dummy_intensity</span> <span class="o">=</span> <span class="o">-</span><span class="mf">3.0</span>
+<span class="n">shadmany_CIDs</span> <span class="o">=</span> <span class="p">[</span><span class="n">shadmany_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">smile</span><span class="p">][</span><span class="s1">&#39;Pubchem ID #&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">smile</span> <span class="ow">in</span> <span class="n">shadmany_smiles</span><span class="p">]</span>
+<span class="n">shadmany_CID_dilutions</span> <span class="o">=</span> <span class="p">[(</span><span class="n">shadmany_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">smile</span><span class="p">][</span><span class="s1">&#39;Pubchem ID #&#39;</span><span class="p">],</span><span class="n">dummy_intensity</span><span class="p">)</span> <span class="k">for</span> <span class="n">smile</span> <span class="ow">in</span> <span class="n">shadmany_smiles</span><span class="p">]</span>
+<span class="n">molecular_data_shadmany</span> <span class="o">=</span> <span class="n">molecular_data_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">shadmany_smiles</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">molecular_data_shadmany</span><span class="o">.</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="n">shadmany_smiles</span>
+<span class="n">molecular_data_shadmany</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">shadmany_CIDs</span>
+<span class="n">X_shadmany</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">dream</span><span class="o">.</span><span class="n">make_X</span><span class="p">(</span><span class="n">molecular_data_shadmany</span><span class="p">,</span><span class="n">shadmany_CID_dilutions</span><span class="p">,</span>
+                            <span class="n">good1</span><span class="o">=</span><span class="n">good1</span><span class="p">,</span><span class="n">good2</span><span class="o">=</span><span class="n">good2</span><span class="p">,</span><span class="n">means</span><span class="o">=</span><span class="n">means</span><span class="p">,</span><span class="n">stds</span><span class="o">=</span><span class="n">stds</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Reorder molecules to match the order in the spreadsheet</span>
+<span class="n">X_shadmany</span> <span class="o">=</span> <span class="n">X_shadmany</span><span class="o">.</span><span class="n">loc</span><span class="p">[[(</span><span class="n">cid</span><span class="p">,</span><span class="n">dummy_intensity</span><span class="p">)</span> <span class="k">for</span> <span class="n">cid</span> <span class="ow">in</span> <span class="n">shadmany_data</span><span class="p">[</span><span class="s1">&#39;Pubchem ID #&#39;</span><span class="p">]]]</span>
+<span class="c1"># Confirm that the order matches</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">X_shadmany</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="s1">&#39;CID&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">shadmany_data</span><span class="p">[</span><span class="s1">&#39;Pubchem ID #&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The X matrix now has shape (32x1697) molecules by non-NaN good molecular descriptors
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fit-model-to-dream-data">
+<h1>Fit model to DREAM data<a class="headerlink" href="#fit-model-to-dream-data" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Model for DREAM data</span>
+<span class="n">rfs</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">these_descriptors</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">descriptors</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Just intensity</span>
+<span class="n">Y_dream_mean</span> <span class="o">=</span> <span class="n">Y_dream</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="s1">&#39;Descriptor&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="s1">&#39;Descriptor&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">descriptor</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">these_descriptors</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">. Fitting model for </span><span class="si">%s</span><span class="s2">...&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">descriptor</span><span class="p">))</span>
+    <span class="n">rfs</span><span class="p">[</span><span class="n">descriptor</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">n_estimators</span><span class="p">)</span>
+    <span class="n">valid</span> <span class="o">=</span> <span class="n">Y_dream_mean</span><span class="p">[</span><span class="n">descriptor</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span>
+    <span class="n">rfs</span><span class="p">[</span><span class="n">descriptor</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_dream</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">(),</span><span class="n">Y_dream_mean</span><span class="p">[</span><span class="n">descriptor</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1. Fitting model for Intensity...
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check model quality by cross-validation on the DREAM data.  </span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GroupShuffleSplit</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">X_dream</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">Y_dream_mean</span><span class="p">[</span><span class="n">descriptor</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">valid</span><span class="p">]</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="s1">&#39;CID&#39;</span><span class="p">)</span>
+<span class="n">ss</span> <span class="o">=</span> <span class="n">GroupShuffleSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">train</span><span class="p">,</span><span class="n">test</span> <span class="ow">in</span> <span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">groups</span><span class="o">=</span><span class="n">groups</span><span class="p">):</span>
+    <span class="n">rfs</span><span class="p">[</span><span class="s1">&#39;Intensity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">rfs</span><span class="p">[</span><span class="s1">&#39;Intensity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">(),</span><span class="n">y</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">train</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">())</span>
+    <span class="n">predicted</span> <span class="o">=</span> <span class="n">rfs</span><span class="p">[</span><span class="s1">&#39;Intensity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">test</span><span class="p">]</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">())</span>
+    <span class="n">observed</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">test</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">predicted</span><span class="p">,</span><span class="n">observed</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.693696324394
+0.663224096853
+0.651281217356
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="compute-predictions-and-display">
+<h1>Compute predictions and display<a class="headerlink" href="#compute-predictions-and-display" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">compare_smiles_lengths</span><span class="p">(</span><span class="n">dream_smiles</span><span class="p">,</span><span class="n">shadmany_smiles</span><span class="p">,[</span><span class="s1">&#39;DREAM&#39;</span><span class="p">,</span><span class="s1">&#39;Enantiomers&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>t=-10.354, p=6.46e-23
+</pre></div>
+</div>
+<img alt="_images/preliminary_24_1.png" src="_images/preliminary_24_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">compare_molecular_weights</span><span class="p">(</span><span class="n">molecular_data_dream</span><span class="p">,</span><span class="n">molecular_data_shadmany</span><span class="p">,[</span><span class="s1">&#39;DREAM&#39;</span><span class="p">,</span><span class="s1">&#39;Enantiomers&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>t=-3.964, p=8.42e-05
+</pre></div>
+</div>
+<img alt="_images/preliminary_25_1.png" src="_images/preliminary_25_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">make_predictions</span><span class="p">(</span><span class="n">rfs</span><span class="p">,</span><span class="n">X_shadmany</span><span class="p">,[</span><span class="s1">&#39;Intensity&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plus_pred</span> <span class="o">=</span> <span class="n">predictions</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;Intensity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">minus_pred</span> <span class="o">=</span> <span class="n">predictions</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;Intensity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">plus_pred</span><span class="p">,</span><span class="n">minus_pred</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">],</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;(+) intensity prediction&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;(-) intensity prediction&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/preliminary_28_0.png" src="_images/preliminary_28_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plus_thresh</span> <span class="o">=</span> <span class="n">shadmany_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;Normalized Detection Threshold&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">minus_thresh</span> <span class="o">=</span> <span class="n">shadmany_data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;Normalized Detection Threshold&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">plus_thresh</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">plus_thresh</span><span class="p">,</span><span class="mf">1e-8</span><span class="p">,</span><span class="mf">1e8</span><span class="p">)</span>
+<span class="n">minus_thresh</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">minus_thresh</span><span class="p">,</span><span class="mf">1e-8</span><span class="p">,</span><span class="mf">1e8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">plus_thresh</span><span class="p">,</span><span class="n">minus_thresh</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mf">1e-7</span><span class="p">,</span><span class="mf">1e9</span><span class="p">],[</span><span class="mf">1e-7</span><span class="p">,</span><span class="mf">1e9</span><span class="p">],</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">1e-7</span><span class="p">,</span><span class="mf">1e9</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">1e-7</span><span class="p">,</span><span class="mf">1e9</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;(+) detection threshold (ppb)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;(-) detection threshold (ppb)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/preliminary_30_0.png" src="_images/preliminary_30_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">delta_pred</span> <span class="o">=</span> <span class="n">plus_pred</span> <span class="o">-</span> <span class="n">minus_pred</span>
+<span class="n">delta_thresh</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">minus_thresh</span> <span class="o">/</span> <span class="n">plus_thresh</span><span class="p">)</span>
+<span class="n">inds</span> <span class="o">=</span> <span class="n">delta_thresh</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
+<span class="n">delta_pred</span> <span class="o">=</span> <span class="n">delta_pred</span><span class="p">[</span><span class="n">inds</span><span class="p">]</span>
+<span class="n">delta_thresh</span> <span class="o">=</span> <span class="n">delta_thresh</span><span class="p">[</span><span class="n">inds</span><span class="p">]</span>
+<span class="n">negative</span> <span class="o">=</span> <span class="n">delta_thresh</span> <span class="o">&lt;</span> <span class="mi">0</span>
+<span class="n">delta_thresh</span><span class="p">[</span><span class="n">negative</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">delta_pred</span><span class="p">[</span><span class="n">negative</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">delta_pred</span><span class="p">,</span><span class="n">delta_thresh</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted intensity difference (+) vs (-)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Actual detection threshold difference</span><span class="se">\n</span><span class="s1"> in log units (+) vs (-)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/preliminary_31_0.png" src="_images/preliminary_31_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlation coefficient R = </span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">delta_pred</span><span class="p">,</span><span class="n">delta_thresh</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation coefficient R = nan
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/rgerkin/miniconda3/lib/python3.6/site-packages/numpy/lib/function_base.py:3167: RuntimeWarning: invalid value encountered in true_divide
+  c /= stddev[:, None]
+/home/rgerkin/miniconda3/lib/python3.6/site-packages/numpy/lib/function_base.py:3168: RuntimeWarning: invalid value encountered in true_divide
+  c /= stddev[None, :]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">plus_thresh</span><span class="p">,</span><span class="n">plus_pred</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;(+)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">minus_thresh</span><span class="p">,</span><span class="n">minus_pred</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;(-)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">1e-9</span><span class="p">,</span><span class="mf">1e9</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Detection Threshold (ppb)&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Predicted Intensity&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">a</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlation between predicted intensity and actual detection thresholds is R=</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span> \
+      <span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">plus_thresh</span><span class="p">,</span><span class="n">minus_thresh</span><span class="p">)),</span><span class="n">a</span><span class="o">.</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">plus_pred</span><span class="p">,</span><span class="n">minus_pred</span><span class="p">)))[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/preliminary_33_0.png" src="_images/preliminary_33_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation between predicted intensity and actual detection thresholds is R=-0.359
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Liyah Coleman (she/her)<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

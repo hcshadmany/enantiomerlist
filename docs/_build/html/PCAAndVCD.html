@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Mordred and Morgan" href="MordredAndMorgan.html" />
+    <link rel="next" title="Liyah, stop here. I can explain what I am doing in the next section another time." href="DrGerkinCheck.html" />
+    <link rel="prev" title="3rd Party Embeddings" href="ThirdPartyEmbeddings.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -107,7 +108,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="home.html">
+                <a class="reference internal" href="intro.html">
                     Predicting Odor Divergence of Enantiomers
                 </a>
             </li>
@@ -120,12 +121,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="chirality.html">
-   1. Chirality
+   Chirality
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="enantiomer.html">
-   2. Enantiomers
+   Enantiomers
   </a>
  </li>
  <li class="toctree-l1">
@@ -161,7 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="themodel.html">
+  <a class="reference internal" href="svr.html">
    Support Vector Regression
   </a>
  </li>
@@ -178,13 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="PredictingOdorDivergenceModel.html">
-   Predicting Divergence Notebook
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ThirdPartyEmbeddings.html">
-   3rd Party Embeddings
+  <a class="reference internal" href="LoadData.html">
+   Load Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -192,9 +188,19 @@ const thebe_selector_output = ".output, .cell_output"
    Mordred and Morgan
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ThirdPartyEmbeddings.html">
+   3rd Party Embeddings
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    PCA and VCD (Could delete since there were no matches)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="DrGerkinCheck.html">
+   Liyah, stop here.  I can explain what I am doing in the next section another time.
   </a>
  </li>
 </ul>
@@ -868,7 +874,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">common_index</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">pca_vcd_values</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keep the columns in the gme df that match the index names in original dataset</span>
+<span class="n">common_index</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">pca_vcd_values</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 <span class="n">half_enantiomer_data_copy</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
 <span class="n">pca_vcd_features</span> <span class="o">=</span> <span class="n">pca_vcd_values</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
 </pre></div>
@@ -877,7 +884,8 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca_vcd</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pca_vcd_features</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine original dataset with pca_vcd</span>
+<span class="n">pca_vcd</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pca_vcd_features</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -965,12 +973,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="MordredAndMorgan.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="ThirdPartyEmbeddings.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mordred and Morgan</p>
+            <p class="prev-next-title">3rd Party Embeddings</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="DrGerkinCheck.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Liyah, stop here.  I can explain what I am doing in the next section another time.</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

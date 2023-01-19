@@ -28,11 +28,11 @@ from sklearn.preprocessing import StandardScaler
 half_enantiomer_data = pd.read_csv("half_enantiomer_data.csv")
 
 
-# In[4]:
+# In[20]:
 
 
 # Loads in embeddings from 3rd party model to use as features
-gme = np.load('enantiomer-embeddings-for-rick.npz', allow_pickle=True) # Load the file
+gme = np.load('../data/thirdparty/enantiomer-embeddings-for-rick.npz', allow_pickle=True) # Load the file
 gme = gme['embeddings'].item() # Extract the data
 gme = {k: v.squeeze() for k, v in gme.items()} # Flatten the arrays
 gme_df = pd.DataFrame(gme).T  # Turn into a dataframe
@@ -81,10 +81,10 @@ g_model_embeddings = g_model_embeddings.set_index("Molecule Name")
 g_model_embeddings.head()
 
 
-# In[19]:
+# In[30]:
 
 
-assert ((g_model_embeddings.iloc[:,11:].var() <= 0).sum() == 0), "This should be 0 if not, get rid of columns with 0 varience"
+assert ((g_model_embeddings.iloc[:,15:].var() <= 0).sum() == 0), "This should be 0 if not, get rid of columns with 0 varience"
 
 
 # Model
@@ -96,15 +96,15 @@ assert ((g_model_embeddings.iloc[:,11:].var() <= 0).sum() == 0), "This should be
 model_helpers.fold_difference_of_enantiomers(half_enantiomer_data)
 
 
-# In[17]:
+# In[28]:
 
 
-x_gme = g_model_embeddings.iloc[:,11:]
+x_gme = g_model_embeddings.iloc[:,15:]
 y_gme = g_model_embeddings["log_abs"]
 Xn_gme = pd.DataFrame(StandardScaler().fit_transform(x_gme), index=x_gme.index, columns=x_gme.columns)
 
 
-# In[18]:
+# In[29]:
 
 
 model_helpers.create_model(Xn_gme, y_gme)

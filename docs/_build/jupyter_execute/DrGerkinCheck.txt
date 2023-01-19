@@ -1,0 +1,194 @@
+# Dr. Gerkin you left this for me a while back but we never came back to it
+
+from sklearn.feature_selection import RFE, RFECV
+svr = SVR(C=10, kernel='linear')
+rfe = RFE(svr, n_features_to_select=1, step=10)
+#rfe.fit(Xn, y)
+
+rfe.ranking_.max()
+
+svr = SVR(C=10, kernel='rbf')
+ns = range(1, 109, 1)
+rs = pd.Series(index=ns, dtype=float)
+for n in tqdm(ns):
+    Xn_ = Xn[Xn.columns[rfe.ranking_ <= n]]
+    y_predict = cross_val_predict(svr, Xn_, y, cv=LeaveOneOut(), n_jobs=-1)
+    rs[n] = np.corrcoef(y, y_predict)[0, 1]
+
+rs.plot()
+
+Cs = np.logspace(-3, 3, 13)
+rs_in = pd.Series(index=Cs, dtype=float)
+rs_out = pd.Series(index=Cs, dtype=float)
+rhos_out = pd.Series(index=Cs, dtype=float)
+Xn_ = Xn[Xn.columns[rfe.ranking_ <= 10]]
+for C in tqdm(Cs):
+    svr = SVR(C=C, kernel='rbf')
+    clf = svr
+    #y_predict = cross_val_predict(rfr, Xn, y, cv=LeaveOneOut(), n_jobs=-1)
+    clf.fit(Xn_, y)
+    y_predict_in = clf.predict(Xn_)
+    y_predict_out = cross_val_predict(clf, Xn_, y, cv=LeaveOneOut(), n_jobs=-1)
+    y_predict_in = np.clip(y_predict_in, 0, np.inf)
+    y_predict_out = np.clip(y_predict_out, 0, np.inf)
+    rs_in[C] = pearsonr(y, y_predict_in)[0]
+    rs_out[C] = pearsonr(y, y_predict_out)[0]
+    rhos_out[C] = spearmanr(y, y_predict_out)[0]
+
+rs_in.plot(label='In-sample prediction R')
+rs_out.plot(label='Out-of-sample prediction R')
+rhos_out.plot(label=r'Out-of-sample prediction $\rho$')
+plt.xscale('log')
+plt.ylabel('Correlation\n(predicted vs observed)')
+plt.xlabel('C (SVR hyperparameter)')
+plt.legend(fontsize=10)
+
+Xn_ = Xn[Xn.columns[rfe.ranking_ <= 10]]
+rfr = RandomForestRegressor(n_estimators=100)
+y_predict = cross_val_predict(rfr, Xn_, y, cv=LeaveOneOut(), n_jobs=-1)
+np.corrcoef(y, y_predict)[0, 1]
+
+rfr.fit(Xn_, y)
+pd.Series(rfr.feature_importances_, Xn_.columns).sort_values(ascending=False).head(25)
+
+from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import LeaveOneOut
+sns.set_style('whitegrid')
+svr = SVR(C=10, kernel='rbf')
+svr.fit(Xn_mordred, y_mordred)
+y_predict = cross_val_predict(svr, Xn_mordred, y_mordred, cv=LeaveOneOut(), n_jobs=-1)
+y_predict = np.clip(y_predict, 0, np.inf)
+plt.figure(figsize=(5, 5))
+plt.scatter(y_mordred, y_predict, alpha=0.3)
+#maxx = y.max()*1.01
+#plt.plot([0, maxx], [0, maxx], '--')
+plt.plot([0, 4], [0, 4], '--')
+plt.xlim(0, 4)
+plt.ylim(0, 4)
+#plt.xlim(0.9, maxx)
+#plt.ylim(0.9, maxx)
+plt.title('R = %.2g' % np.corrcoef(y_mordred, y_predict)[0, 1])
+#ticks = range(5)
+#plt.xticks(ticks)
+#plt.yticks(ticks)
+plt.xticks([1,2,3,4], ["1x", "10x", "100x", "1000x"])
+plt.yticks([1,2,3,4], ["1x", "10x", "100x", "1000x"])
+# plt.xticks(ticks, ['%d' % 10**x for x in ticks])
+# plt.yticks(ticks, ['%d' % 10**x for x in ticks])
+plt.xlabel('Actual Detection Threshold Ratio')
+plt.ylabel('Predicted Detection\nThreshold Ratio')
+
+from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import LeaveOneOut
+sns.set_style('whitegrid')
+svr = SVR(C=10, kernel='rbf')
+svr.fit(Xn_morgan, y_morgan)
+y_predict = cross_val_predict(svr, Xn_morgan, y_morgan, cv=LeaveOneOut(), n_jobs=-1)
+y_predict = np.clip(y_predict, 0, np.inf)
+plt.figure(figsize=(5, 5))
+plt.scatter(y_morgan, y_predict, alpha=0.3)
+plt.plot([0, 4], [0, 4], '--')
+plt.xlim(0, 4)
+plt.ylim(0, 4)
+plt.title('R = %.2g' % np.corrcoef(y_morgan, y_predict)[0, 1])
+plt.xticks([1,2,3,4], ["1x", "10x", "100x", "1000x"])
+plt.yticks([1,2,3,4], ["1x", "10x", "100x", "1000x"])
+plt.xlabel('Actual Detection Threshold Ratio')
+plt.ylabel('Predicted Detection\nThreshold Ratio')
+
+sns.heatmap(svr.support_vectors_, cmap='RdBu_r')
+
+abraham = pyrfume.load_data('abraham_2011/abraham-2011-with-CIDs.csv')
+abraham = abraham.dropna(subset=['SMILES'])
+from pyrfume.features import smiles_to_mordred
+abraham_mordred = smiles_to_mordred(abraham['SMILES'].values)
+
+#X = abraham_mordred.join(abraham.set_index('SMILES').drop(['Substance', 'Group'], axis=1), how='inner', rsuffix='abr_')
+abe_ok = ['MW',
+ 'Log (1/ODT)',
+ 'E',
+ 'S',
+ 'A',
+ 'B',
+ 'L',
+ 'V',
+ 'M',
+ 'AL',
+ 'AC',
+ 'ES',
+ 'C1',
+ 'C1AC',
+ 'C1AL',
+ 'HS',
+ 'C2',
+ 'C2Al',
+ 'C2AC']
+X = abraham_mordred.join(abraham.set_index('SMILES')[['Log (1/ODT)']], how='inner', rsuffix='abr_')
+y = X['Log (1/ODT)']
+X = X.astype('float').drop('Log (1/ODT)', axis=1)
+#finite_all = X.dropna(axis=1).columns.intersection(finite_mordred)
+X = X[finite_mordred].fillna(0)
+X = X.dropna(axis=1)
+Xn = X.copy()
+Xn[:] = StandardScaler().fit_transform(X)
+
+Cs = np.logspace(-3, 3, 13)
+rs_in = pd.Series(index=Cs, dtype=float)
+rs_out = pd.Series(index=Cs, dtype=float)
+rhos_out = pd.Series(index=Cs, dtype=float)
+for C in tqdm(Cs):
+    svr = SVR(C=C, kernel='rbf')
+    clf = svr
+    #y_predict = cross_val_predict(rfr, Xn, y, cv=LeaveOneOut(), n_jobs=-1)
+    clf.fit(Xn, y)
+    y_predict_in = clf.predict(Xn)
+    y_predict_out = cross_val_predict(clf, Xn, y, cv=LeaveOneOut(), n_jobs=-1)
+    y_predict_in = np.clip(y_predict_in, 0, np.inf)
+    y_predict_out = np.clip(y_predict_out, 0, np.inf)
+    rs_in[C] = pearsonr(y, y_predict_in)[0]
+    rs_out[C] = pearsonr(y, y_predict_out)[0]
+    rhos_out[C] = spearmanr(y, y_predict_out)[0]
+
+rs_in.plot(label='In-sample prediction R')
+rs_out.plot(label='Out-of-sample prediction R')
+rhos_out.plot(label=r'Out-of-sample prediction $\rho$')
+plt.xscale('log')
+plt.ylabel('Correlation\n(predicted vs observed)')
+plt.xlabel('C (SVR hyperparameter)')
+plt.legend(fontsize=10)
+
+svr = SVR(C=1, kernel='rbf')
+svr.fit(Xn, y)
+X_ = mordred_data[finite_mordred]; y_ = mordred_data['log_abs']
+X_ = X_.join(half_coleman_data.set_index('SMILES String')['det'])
+X_ = X_[y_ < 10]
+y_ = y_[y_ < 10]
+Xn_ = pd.DataFrame(StandardScaler().fit_transform(X_), index=X_.index, columns=X_.columns)
+X_['det'] = svr.predict(Xn_.drop('det', axis=1))
+#y_predict = cross_val_predict(svr, Xn, y, cv=LeaveOneOut(), n_jobs=-1)
+
+Xn_ = pd.DataFrame(StandardScaler().fit_transform(X_), index=X_.index, columns=X_.columns)
+Cs = np.logspace(-3, 3, 13)
+rs_in = pd.Series(index=Cs, dtype=float)
+rs_out = pd.Series(index=Cs, dtype=float)
+rhos_out = pd.Series(index=Cs, dtype=float)
+for C in tqdm(Cs):
+    svr = SVR(C=C, kernel='rbf')
+    clf = svr
+    #y_predict = cross_val_predict(rfr, Xn, y, cv=LeaveOneOut(), n_jobs=-1)
+    clf.fit(Xn_, y_)
+    y_predict_in = clf.predict(Xn_)
+    y_predict_out = cross_val_predict(clf, Xn_, y_, cv=LeaveOneOut(), n_jobs=-1)
+    y_predict_in = np.clip(y_predict_in, 0, np.inf)
+    y_predict_out = np.clip(y_predict_out, 0, np.inf)
+    rs_in[C] = pearsonr(y_, y_predict_in)[0]
+    rs_out[C] = pearsonr(y_, y_predict_out)[0]
+    rhos_out[C] = spearmanr(y_, y_predict_out)[0]
+
+rs_in.plot(label='In-sample prediction R')
+rs_out.plot(label='Out-of-sample prediction R')
+rhos_out.plot(label=r'Out-of-sample prediction $\rho$')
+plt.xscale('log')
+plt.ylabel('Correlation\n(predicted vs observed)')
+plt.xlabel('C (SVR hyperparameter)')
+plt.legend(fontsize=10)

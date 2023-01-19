@@ -55,9 +55,10 @@ half_enantiomer_data_copy = half_enantiomer_data
 half_enantiomer_data_copy;
 
 
-# In[17]:
+# In[20]:
 
 
+# Keep the columns in the gme df that match the index names in original dataset
 common_index = half_enantiomer_data_copy.index.intersection(pca_vcd_values.index)
 half_enantiomer_data_copy = half_enantiomer_data_copy.loc[common_index]
 pca_vcd_features = pca_vcd_values.loc[common_index]
@@ -66,6 +67,7 @@ pca_vcd_features = pca_vcd_values.loc[common_index]
 # In[18]:
 
 
+# Combine original dataset with pca_vcd
 pca_vcd = half_enantiomer_data_copy.join(pca_vcd_features, how="inner")
 
 
