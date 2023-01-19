@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: home
+root: intro
 # defaults:
 #   titlesonly: True
 parts:
@@ -17,12 +17,13 @@ parts:
     - file: pastapproach
     - file: newapproach
     - file: detectionthreshold
-    - file: themodel
+    - file: svr
     - file: conclusion
   - caption: Notebook
     chapters:
-    - file: PredictingOdorDivergenceModel
+    - file: LoadData
     - file: CutDataFrameHalf
-    - file: ThirdPartyEmbeddings
     - file: MordredAndMorgan
+    - file: ThirdPartyEmbeddings
     - file: PCAAndVCD
+    - file: DrGerkinCheck

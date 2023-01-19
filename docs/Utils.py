@@ -192,6 +192,7 @@ def finite_features(whole_dataset : pd.DataFrame) -> pd.DataFrame:
     finite_feature = finite_feature[finite_feature].index # takes the columns where the condition in the line above is true
     return finite_feature
 
+
 def smiles_to_mordred(smiles: str, features: list = None) -> pd.DataFrame:
     """[This function accepts SMILES strings and calculates their respective mordred features]
 
@@ -287,6 +288,7 @@ def smiles_to_morgan_sim(smiles: str, ref_smiles: str, radius: int = 5, features
     print("%d similarity features for %d molecules" % morgan.shape)
     return morgan
 
+
 def fold_difference_of_enantiomers(enantiomers_df):
     """Relational graph to show the magnitude difference between all enantiomeric pairs in the dataset.
 
@@ -304,6 +306,7 @@ def fold_difference_of_enantiomers(enantiomers_df):
     plt.xlabel("\nFold Difference in Detection\nThreshold between Enantiomers")
     plt.ylabel("Number of Enantiomeric Pairs")
     plt.plot()
+
 
 def create_model(Xn, y):
     """Creating a Support Vector Regression Model to display predictings
@@ -342,6 +345,7 @@ def create_model(Xn, y):
     plt.xlabel('C (SVR hyperparameter)')
     plt.legend(fontsize=10)
 
+
 def cross_val(Xn, y):
     """Creates cross validation model to measure model performance
 
@@ -371,7 +375,7 @@ def cross_val(Xn, y):
     plt.xlabel('Actual Detection Threshold Ratio')
     plt.ylabel('Predicted Detection\nThreshold Ratio')
 
-# Detail this section later
+
 def model(whole_dataset: pd.DataFrame, features_dataset: pd.DataFrame):
     """Generates a Random Forest Model for the dataframe of enantiomers and their features
 
