@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>3rd Party Embeddings &#8212; Enantiomer Odor Thesis</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mordred and Morgan" href="MordredAndMorgan.html" />
+    <link rel="prev" title="Predicting Divergence Notebook" href="PredictingOdorDivergenceModel.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Enantiomer Odor Thesis</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="home.html">
+                    Predicting Odor Divergence of Enantiomers
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Background
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chirality.html">
+   1. Chirality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="enantiomer.html">
+   2. Enantiomers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="odordivergence.html">
+   Odor Divergence
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Research
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="problemstatement.html">
+   Predicting Odor Divergence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pastapproach.html">
+   Previous Approach
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="newapproach.html">
+   New Approach - Structural Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="detectionthreshold.html">
+   Detection Threshold
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="themodel.html">
+   Support Vector Regression
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusion.html">
+   Conclusion
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Notebook
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PredictingOdorDivergenceModel.html">
+   Predicting Divergence Notebook
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3rd Party Embeddings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="MordredAndMorgan.html">
+   Mordred and Morgan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PCAAndVCD.html">
+   PCA and VCD (Could delete since there were no matches)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/ThirdPartyEmbeddings.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FThirdPartyEmbeddings.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/ThirdPartyEmbeddings.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>3rd Party Embeddings</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="rd-party-embeddings">
+<h1>3rd Party Embeddings<a class="headerlink" href="#rd-party-embeddings" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using 3rd party embeddings as features to the model</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span> <span class="nn">Utils</span> <span class="k">as</span> <span class="nn">model_helpers</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Computing Features</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">half_enantiomer_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;half_enantiomer_data.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Loads in embeddings from 3rd party model to use as features</span>
+<span class="n">gme</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;enantiomer-embeddings-for-rick.npz&#39;</span><span class="p">,</span> <span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Load the file</span>
+<span class="n">gme</span> <span class="o">=</span> <span class="n">gme</span><span class="p">[</span><span class="s1">&#39;embeddings&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span> <span class="c1"># Extract the data</span>
+<span class="n">gme</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">gme</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span> <span class="c1"># Flatten the arrays</span>
+<span class="n">gme_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">gme</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># Turn into a dataframe</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gme_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>...</th>
+      <th>246</th>
+      <th>247</th>
+      <th>248</th>
+      <th>249</th>
+      <th>250</th>
+      <th>251</th>
+      <th>252</th>
+      <th>253</th>
+      <th>254</th>
+      <th>255</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CC1(C)[C@H]2CC[C@H](CO)[C@@H]1C2</th>
+      <td>3.361583</td>
+      <td>0.382813</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.153011</td>
+      <td>1.410133</td>
+      <td>2.376704</td>
+      <td>0.0</td>
+      <td>0.765796</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.331122</td>
+      <td>0.251479</td>
+      <td>0.697581</td>
+      <td>0.569553</td>
+      <td>0.785193</td>
+      <td>0.000000</td>
+      <td>3.134834</td>
+      <td>3.344208</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>CCCC[C@H](C(C)C)[C@H](O)CC</th>
+      <td>1.591573</td>
+      <td>0.000000</td>
+      <td>0.428940</td>
+      <td>1.412535</td>
+      <td>0.304237</td>
+      <td>4.056973</td>
+      <td>2.067844</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.145670</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.664556</td>
+      <td>1.274769</td>
+      <td>0.000000</td>
+      <td>0.200347</td>
+      <td>2.116929</td>
+      <td>0.000000</td>
+      <td>0.557281</td>
+    </tr>
+    <tr>
+      <th>CCCCCCCC[C@@H](C)O</th>
+      <td>0.222926</td>
+      <td>0.000000</td>
+      <td>0.223172</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>5.710248</td>
+      <td>2.740240</td>
+      <td>0.0</td>
+      <td>1.230071</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.801922</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.291554</td>
+      <td>0.525811</td>
+      <td>2.257053</td>
+    </tr>
+    <tr>
+      <th>CC1(C)[C@H]2CC[C@](C)(C2)[C@H]1O</th>
+      <td>2.282184</td>
+      <td>0.912073</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.890187</td>
+      <td>0.176412</td>
+      <td>2.256818</td>
+      <td>0.0</td>
+      <td>0.569661</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.101928</td>
+      <td>0.000000</td>
+      <td>0.340307</td>
+      <td>1.982442</td>
+      <td>0.941730</td>
+      <td>0.164528</td>
+      <td>0.000000</td>
+      <td>3.065782</td>
+      <td>2.076539</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>C=C1CC[C@@H](C)C(C)(C)[C@@H]1/C=C/C(C)=O</th>
+      <td>3.561810</td>
+      <td>0.000000</td>
+      <td>0.271860</td>
+      <td>3.111673</td>
+      <td>0.000000</td>
+      <td>0.742194</td>
+      <td>2.071393</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.158586</td>
+      <td>...</td>
+      <td>0.771586</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.382187</td>
+      <td>0.000000</td>
+      <td>1.091824</td>
+      <td>1.321833</td>
+      <td>0.000000</td>
+      <td>0.289515</td>
+      <td>0.716665</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 256 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make copy of original data and set the index to match that of the gme model</span>
+<span class="n">half_enantiomer_data_copy</span> <span class="o">=</span> <span class="n">half_enantiomer_data</span>
+<span class="n">half_enantiomer_data_copy</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;SMILES String&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keep the columns in the gme df that match the index names in original dataset</span>
+<span class="n">common_index</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">gme_df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="n">half_enantiomer_data_copy</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
+<span class="n">gme_df</span> <span class="o">=</span> <span class="n">gme_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine original dataset with gme df</span>
+<span class="n">g_model_embeddings</span> <span class="o">=</span> <span class="n">half_enantiomer_data_copy</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">gme_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reset the index to be &quot;Moecule Name&quot;</span>
+<span class="n">g_model_embeddings</span> <span class="o">=</span> <span class="n">g_model_embeddings</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;Molecule Name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g_model_embeddings</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 0.1</th>
+      <th>Pubchem ID #</th>
+      <th>Note</th>
+      <th>Other SMILES</th>
+      <th>Method</th>
+      <th>Contributor</th>
+      <th>Detection Threshold</th>
+      <th>Detection Units</th>
+      <th>Normalized Detection Threshold</th>
+      <th>...</th>
+      <th>246</th>
+      <th>247</th>
+      <th>248</th>
+      <th>249</th>
+      <th>250</th>
+      <th>251</th>
+      <th>252</th>
+      <th>253</th>
+      <th>254</th>
+      <th>255</th>
+    </tr>
+    <tr>
+      <th>Molecule Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>(R)-(-)- muscone/(R)--3-methyl cyclopentadecanone</th>
+      <td>20</td>
+      <td>20</td>
+      <td>7160826</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.10E+01</td>
+      <td>ppb</td>
+      <td>61.00</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.245207</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.003086</td>
+      <td>0.000000</td>
+      <td>2.417500</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>(S)-(+)-2-methylbutanal</th>
+      <td>42</td>
+      <td>42</td>
+      <td>6971249</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.00E+01</td>
+      <td>ppm in air</td>
+      <td>10000.00</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.866084</td>
+      <td>1.189604</td>
+      <td>1.203395</td>
+      <td>2.965221</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.632849</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>( 1S,5S)-(-)-\\xce\\xb1-Pinene</th>
+      <td>64</td>
+      <td>64</td>
+      <td>440968</td>
+      <td>Changed from PubChem ID 6654</td>
+      <td>CC1=CC[C@H]2C[C@@H]1C2(C)C</td>
+      <td>Different PubChem ID</td>
+      <td>DW</td>
+      <td>1.00E-01</td>
+      <td>ppb</td>
+      <td>0.10</td>
+      <td>...</td>
+      <td>1.348683</td>
+      <td>0.000000</td>
+      <td>0.685428</td>
+      <td>0.290208</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.955723</td>
+      <td>3.763213</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>(1R,3S,4S)-(+)-neomenthol</th>
+      <td>96</td>
+      <td>96</td>
+      <td>439263</td>
+      <td>NaN</td>
+      <td>CC(C)[C@@H]1CC[C@@H](C)C[C@@H]1O</td>
+      <td>ChemDraw + Cactus</td>
+      <td>DW</td>
+      <td>8.10E-01</td>
+      <td>ppb</td>
+      <td>0.81</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.204114</td>
+      <td>1.303833</td>
+      <td>2.614392</td>
+      <td>0.249996</td>
+      <td>0.000000</td>
+      <td>3.942642</td>
+      <td>1.846398</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>(3S)-(-)-dihydrocitronellol</th>
+      <td>106</td>
+      <td>106</td>
+      <td>92283029</td>
+      <td>NaN</td>
+      <td>CC(C)CCC[C@@H](C)CCO</td>
+      <td>ChemDraw + Cactus</td>
+      <td>DW</td>
+      <td>2.50E+02</td>
+      <td>ppb</td>
+      <td>250.00</td>
+      <td>...</td>
+      <td>1.637907</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.083949</td>
+      <td>1.556027</td>
+      <td>2.074914</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 271 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="p">((</span><span class="n">g_model_embeddings</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">11</span><span class="p">:]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;This should be 0 if not, get rid of columns with 0 varience&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AssertionError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">19</span><span class="o">-</span><span class="n">d4930ff6a20c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">assert</span> <span class="p">((</span><span class="n">g_model_embeddings</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">11</span><span class="p">:]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;This should be 0 if not, get rid of columns with 0 varience&quot;</span>
+
+<span class="ne">AssertionError</span>: This should be 0 if not, get rid of columns with 0 varience
+</pre></div>
+</div>
+</div>
+</div>
+<p>Model</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Illustrate the magnitude differences across enantiomeric pairs in the dataset</span>
+<span class="n">model_helpers</span><span class="o">.</span><span class="n">fold_difference_of_enantiomers</span><span class="p">(</span><span class="n">half_enantiomer_data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ThirdPartyEmbeddings_14_0.png" src="_images/ThirdPartyEmbeddings_14_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_gme</span> <span class="o">=</span> <span class="n">g_model_embeddings</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">11</span><span class="p">:]</span>
+<span class="n">y_gme</span> <span class="o">=</span> <span class="n">g_model_embeddings</span><span class="p">[</span><span class="s2">&quot;log_abs&quot;</span><span class="p">]</span>
+<span class="n">Xn_gme</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x_gme</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="n">x_gme</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">x_gme</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py:1679: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;int&#39;, &#39;str&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\extmath.py:986: RuntimeWarning: invalid value encountered in true_divide
+  updated_mean = (last_sum + new_sum) / updated_sample_count
+c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\extmath.py:991: RuntimeWarning: invalid value encountered in true_divide
+  T = new_sum / new_sample_count
+c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\extmath.py:1021: RuntimeWarning: invalid value encountered in true_divide
+  new_unnormalized_variance -= correction ** 2 / new_sample_count
+c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py:1679: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;int&#39;, &#39;str&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_helpers</span><span class="o">.</span><span class="n">create_model</span><span class="p">(</span><span class="n">Xn_gme</span><span class="p">,</span> <span class="n">y_gme</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  0%|          | 0/13 [00:00&lt;?, ?it/s]c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py:1679: FutureWarning: Feature names only support names that are all strings. Got feature names with dtypes: [&#39;int&#39;, &#39;str&#39;]. An error will be raised in 1.2.
+  FutureWarning,
+  0%|          | 0/13 [00:00&lt;?, ?it/s]
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">18</span><span class="o">-</span><span class="n">f163b2588ab9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">model_helpers</span><span class="o">.</span><span class="n">create_model</span><span class="p">(</span><span class="n">Xn_gme</span><span class="p">,</span> <span class="n">y_gme</span><span class="p">)</span>
+
+<span class="nn">c:\Users\Owner\Documents\liyahswebsite\enantiomerlist\docs\Utils.py</span> in <span class="ni">create_model</span><span class="nt">(Xn, y)</span>
+<span class="g g-Whitespace">    </span><span class="mi">324</span>         <span class="n">svr</span> <span class="o">=</span> <span class="n">SVR</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">325</span>         <span class="n">clf</span> <span class="o">=</span> <span class="n">svr</span>
+<span class="ne">--&gt; </span><span class="mi">326</span>         <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">Xn</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">327</span>         <span class="n">y_predict_in</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">Xn</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">328</span>         <span class="n">y_predict_out</span> <span class="o">=</span> <span class="n">cross_val_predict</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">Xn</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneOut</span><span class="p">(),</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nn">c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\svm\_base.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="g g-Whitespace">    </span><span class="mi">194</span>                 <span class="n">order</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">195</span>                 <span class="n">accept_sparse</span><span class="o">=</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">196</span>                 <span class="n">accept_large_sparse</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">197</span>             <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">198</span> 
+
+<span class="nn">c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\base.py</span> in <span class="ni">_validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="g g-Whitespace">    </span><span class="mi">574</span>                 <span class="n">y</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_y_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">575</span>             <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">576</span>                 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">577</span>             <span class="n">out</span> <span class="o">=</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
+<span class="g g-Whitespace">    </span><span class="mi">578</span> 
+
+<span class="nn">c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ni">check_X_y</span><span class="nt">(X, y, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, multi_output, ensure_min_samples, ensure_min_features, y_numeric, estimator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">966</span>         <span class="n">ensure_min_samples</span><span class="o">=</span><span class="n">ensure_min_samples</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">967</span>         <span class="n">ensure_min_features</span><span class="o">=</span><span class="n">ensure_min_features</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">968</span>         <span class="n">estimator</span><span class="o">=</span><span class="n">estimator</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">969</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">970</span> 
+
+<span class="nn">c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">790</span> 
+<span class="g g-Whitespace">    </span><span class="mi">791</span>         <span class="k">if</span> <span class="n">force_all_finite</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">792</span>             <span class="n">_assert_all_finite</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">allow_nan</span><span class="o">=</span><span class="n">force_all_finite</span> <span class="o">==</span> <span class="s2">&quot;allow-nan&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">793</span> 
+<span class="g g-Whitespace">    </span><span class="mi">794</span>     <span class="k">if</span> <span class="n">ensure_min_samples</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+
+<span class="nn">c:\Users\Owner\Anaconda3\lib\site-packages\sklearn\utils\validation.py</span> in <span class="ni">_assert_all_finite</span><span class="nt">(X, allow_nan, msg_dtype)</span>
+<span class="g g-Whitespace">    </span><span class="mi">114</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span>                 <span class="n">msg_err</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="ne">--&gt; </span><span class="mi">116</span>                     <span class="n">type_err</span><span class="p">,</span> <span class="n">msg_dtype</span> <span class="k">if</span> <span class="n">msg_dtype</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">X</span><span class="o">.</span><span class="n">dtype</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span>                 <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span>             <span class="p">)</span>
+
+<span class="ne">ValueError</span>: Input contains NaN, infinity or a value too large for dtype(&#39;float64&#39;).
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="PredictingOdorDivergenceModel.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Predicting Divergence Notebook</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="MordredAndMorgan.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Mordred and Morgan</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Liyah Coleman (she/her)<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
